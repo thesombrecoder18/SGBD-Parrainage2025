@@ -1,2 +1,160 @@
 <app-header></app-header>
+<app-caroussel [slides]="imageUrl"></app-caroussel>
+<!-- Ajoutez ceci juste après le carousel ou là où vous voulez que la flèche apparaisse -->
+<div class="scroll-arrow" (click)="scrollDown()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Présentation et missions... -->
+<div class='jotci'>Sunu Parrainage</div>
+<div class='trait'></div>
+<div class='jotci1'>De la formation professionnelle à l'insertion sur le marché du travail...</div>
+<div class="container">
+    <div class="row">
+        @for (card of cards; track card.id) {
+        <div class='col-sm-12 col-md-4  p-2'>
+            <div class="carte d-flex flex-column justify-content-between">
+                <img [src]="card.icon" alt="">
+                <div class='titleCard'>{{card.title}}</div>
+                <p> {{card.description}}</p>
+            </div> 
+        </div> 
+    }
+    </div>
+</div>
+
+<!-- JotCi en chiffres -->
+<div class='jotci'>La liste des candidats en chiffres </div>
+<div class='trait1'></div>
+<div class="container-fluid bande1">
+    <div class="bande container">
+        @for (stat of stats; track stat.id) {
+            @if (stat.id < 4) {
+                <div class="chiffres">
+                    <div>{{stat.chiffre}}</div>
+                    <p>{{stat.title}}</p>
+                </div>
+            }
+            @else {
+                <div class="chiffres">
+                    <div>{{stat.chiffre}}</div>
+                    <p>{{stat.title}}</p>
+                </div>
+            }     
+        }
+    </div>
+</div>
+
+
+<!-- Diagrammes -->
+<!-- <div class="diagram">
+
+</div> -->
+
+<!-- Temoignages -->
+<div class="gradient">
+    <div class='jotci'>Quelques témoignages </div>
+<div class='trait1'></div>
+</div>
+
+<div class="testimonials container-fluid">
+   <div class="sliding row ">
+   @for (card of testimonials; track card.id) {
+    <div class="carousel-card col-sm-12 col-lg-4">
+        <div class="texte kalam-light">{{card.content}}</div>
+        <div class="author">
+            <img [src]="card.url" alt="">
+            <div>
+                <span>{{card.name}}<br/></span>
+                <span style="font-weight: 100; opacity: 0.9; white-space: nowrap;">{{card.poste}}</span>
+            </div>
+        </div>
+    </div>
+   }
+   </div>
+      
+</div>
+<div class="linear-gradient">
+
+</div>
+
+<!-- Faqs -->
+<div class="container-fluid">
+    <div class="interaction row">
+        <div class="faq col-sm-12 col-lg-6">
+            <div class="section inria-serif-bold">Foire aux Questions</div>
+            <div class="bloc-question">
+                <div class="question">
+                    <div class="inria-serif-light-italic">Comment fonctionne le catalogue de formations sur JotCi ?</div>
+                    <div class="drop" (click)="setDrop()">
+                            <img [src]="drop ? 'assets/icon-moins.svg' : 'assets/icon-plus.svg'" alt="">
+                    </div>
+                </div>
+                <div class="answer">
+                    Le catalogue de formations sur JotCi regroupe une large gamme de formations professionnelles, qu'elles soient en ligne ou en présentiel. Les utilisateurs peuvent filtrer les formations par domaine, niveau, ou durée, et accéder aux informations détaillées sur chaque formation, telles que le programme, les prérequis, et les modalités d'inscription.   
+                </div>
+            </div>
+            <div class="bloc-question" >
+                <div class="question">
+                    <div class="inria-serif-light-italic">Quels services sont proposés pour les prestataires de services sur JotCi ?</div>
+                    <div class="drop" (click)="setDrop1()">
+                            <img [src]="drop1 ? 'assets/icon-moins.svg' : 'assets/icon-plus.svg'" alt="">
+                    </div>
+                </div>
+                <div class="answer" >
+                    JotCi permet aux prestataires de services de proposer leurs expertises (plombier, electricien, architecte, etc.) via un catalogue dédié. Les utilisateurs peuvent rechercher et engager des prestataires pour des missions spécifiques, facilitant ainsi la mise en relation et la gestion des collaborations professionnelles.
+                </div>
+            </div>
+            <div class="bloc-question">
+                <div class="question">
+                    <div class="inria-serif-light-italic">JotCi permet-il l'inscription aux bourses de formation octroyées par le 3FPT ?</div>
+                    <div class="drop" (click)="setDrop2()">
+                            <img [src]="drop2 ? 'assets/icon-moins.svg' : 'assets/icon-plus.svg'" alt="">
+                    </div>
+                </div>
+                <div class="answer" >
+                    Oui, JotCi offre une fonctionnalité dédiée à l'inscription aux bourses de formation octroyées par le 3FPT (Fonds de Financement de la Formation Professionnelle et Technique). Les utilisateurs peuvent consulter les critères d'éligibilité, déposer leur dossier en ligne, et suivre l'évolution de leur demande directement depuis la plateforme.    
+                </div>
+            </div>
+        </div>
+        <div class="about col-sm-12 col-lg-4">
+            <div class="section inria-serif-bold" style="white-space: nowrap;">Ils parlent de nous</div>
+           
+                        <div class="alumni">
+                            <div class="kalam-light feedback texte">“Grâce à JOTCI, j'ai pu trouver rapidement une formation adaptée à mes besoins professionnels. La plateforme est intuitive et m'a permis de m'inscrire facilement en ligne. J'ai aussi pu postuler à plusieurs offres d'emploi en un seul clic, ce qui m'a vraiment fait gagner du temps. Aujourd'hui, je suis en poste grâce aux opportunités offertes par JOTCI ! Je recommande vivement cette plateforme à tous ceux qui cherchent à évoluer dans leur carrière.”</div>
+                            <div class="feedback-author">
+                                <img src="assets/mor.png" alt="">
+                            </div>
+                        </div>
+                        <div class="inria-serif-light-italic" style="padding: 10px 20px 20px 90px; text-align: center; white-space: nowrap; font-size: 0.8em;">Pape Mor NDIAYE | élève en BTS plomberie </div>      
+         
+           
+            <div class="avis">
+                <div class="section inria-serif-bold" style="white-space: nowrap; margin-bottom: 20px;">Donnez un avis</div>
+                    <form  (ngSubmit)="onSubmitForm()">
+                        <!-- <textarea placeholder="Votre commentaire...." autofocus="autofocus" id="description" type="text" rows="6" style="width: 100%;">
+                        </textarea> -->
+                        <div style="width: 100%;">
+                            <!-- <mat-label>Votre commentaire....</mat-label> -->
+                            <textarea matInput
+                                      cdkTextareaAutosize
+                                      
+                                      cdkAutosizeMinRows="1"
+                                      cdkAutosizeMaxRows="5"
+                                      
+                                      placeholder="Votre commentaire...."
+                                     
+                                      ></textarea>
+                        </div>
+                          <div style="text-align: end;">
+                            <button type="submit" mat-raised-button>Envoyer</button>
+                          </div>       
+                    </form>
+
+            </div>
+        </div>
+    </div>
+</div>
 <app-footer></app-footer>

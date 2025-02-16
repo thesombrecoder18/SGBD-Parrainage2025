@@ -18,9 +18,13 @@ import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
+<<<<<<< Updated upstream
     AppComponent,
     AccueilComponent,
     ElecteursComponent
+=======
+    
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,6 @@ import {CommonModule} from '@angular/common';
     CommonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }

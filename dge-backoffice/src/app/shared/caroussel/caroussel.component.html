@@ -1,0 +1,24 @@
+<div class="mycarousel">
+    @for (slide of slides; track slide.id) {
+    <ng-container style="margin-top: 10%S;" >
+    @if (slide.id === currentSlide) {
+        <img @carouselAnimation [src]="slide.url" class="slide"/>
+        <div class="mycarousel-caption caption">
+        <div><p class="text">SunuParrainage, tout devient</p>
+            <p class="accessible text">{{slide.value}} !</p>
+        </div>
+        <div class="valorisation">La formation professionnelle est la clé qui ouvre les portes de l'opportunité, permettant à chacun de transformer ses compétences en succès dans un monde en constante évolution.</div>
+        <p class="titre">{{slide.title}}</p>
+        </div>
+    }
+      
+    </ng-container>
+}
+    <!-- controls -->
+    <button  class="control prev" (click)="onPreviousClick()">
+      <span class="arrow left"></span>
+    </button>
+    <button  class="control next" (click)="onNextClick()">
+      <span class="arrow right"></span>
+    </button>
+</div>
