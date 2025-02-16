@@ -22,7 +22,7 @@ export class ElecteursComponent implements OnInit {
 
   supprimerElecteur(id: number) {
     this.electeurService.supprimerElecteur(id);
-    this.electeurs = this.electeurService.getElecteurs(); // Mise à jour
+    this.electeurs = this.electeurService.getElecteurs();
   }
   modifierElecteur(electeur: any) {
     console.log("Modifier électeur :", electeur);

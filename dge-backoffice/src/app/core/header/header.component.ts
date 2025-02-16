@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import {ActivatedRoute, Router, RouterLink} from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
 
 @Component({
   selector: 'app-header',
-  imports: [SharedModule],
+  imports: [SharedModule,RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -31,11 +31,11 @@ export class HeaderComponent implements OnInit {
   goToDashboard() {
     this.router.navigateByUrl('/dashboard');
     }
-    
+
   goToFinancement(): void {
     this.router.navigateByUrl('/financement-formations');
   }
-    
+
   inscrire(): void {
     this.router.navigateByUrl('/authentification/inscription');
   }
@@ -43,7 +43,7 @@ export class HeaderComponent implements OnInit {
     this.router.navigateByUrl('/authentification/connexion');
   }
   deconnecter() {
-  
+
     this.router.navigateByUrl('/');
   }
 

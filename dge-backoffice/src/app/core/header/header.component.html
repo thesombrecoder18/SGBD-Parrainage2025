@@ -5,12 +5,15 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-between;">
     <div>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" role="button">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" role="button"  [routerLink]="['/electeurs']">Electeurs</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" role="button" >Consultation des statistiques</a>
@@ -29,7 +32,6 @@
     <div class="d-flex align-items-center">
         <ng-container>
           <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="button" >Se connecter</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="button" >S'inscrire</button>
         </ng-container>
         <ng-template #userConnected>
           <button class="btn btn-outline-danger my-2 my-sm-0 mr-3" type="button">Se deconnecter</button>
