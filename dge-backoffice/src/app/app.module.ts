@@ -12,11 +12,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AccueilComponent } from './accueil/accueil.component';
+import {ElecteursComponent} from './electeurs/electeurs.component';
+import {CommandModule} from '@angular/cli/src/command-builder/command-module';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccueilComponent
+    AccueilComponent,
+    ElecteursComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { AccueilComponent } from './accueil/accueil.component';
     AppRoutingModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
