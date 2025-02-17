@@ -6,6 +6,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login', function () {
+    return view('Auth.login');
+})->name('login');
+
+
 Route::get('/DashbordCandidat', function () {
     return view('Dashbord.candidat');
 });

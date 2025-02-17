@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'SunuParrainage')</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <li><a href="{{ route('login') }}"
+            class="nav-link bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Connexion</a></li>
+
 
     {{-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> --}}
 </head>
