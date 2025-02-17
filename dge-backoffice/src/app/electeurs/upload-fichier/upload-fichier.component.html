@@ -1,19 +1,10 @@
-<p>upload-fichier works!</p>
-<p>hello world</p>
+<app-header/>
 
-<form action="">
-  <p>
-    <label for="checksum">Checksum</label>
-    <input type="text" name="checksum" id="checksum">
+<h2>Importer la liste des électeurs</h2>
 
-  </p>
-  <p>
-    <label for="fichierElectorale">Fichier electorale</label>
-    <input type="file" name="fichierElectorale" id="fichierElectorale">
-
-  </p>
-
-
-  <button type="submit">Soumettre </button>
-
+<form (submit)="uploadFile()">
+  <input type="file" (change)="onFileSelected($event)" accept=".csv" />
+  <button type="submit" [disabled]="!file">Uploader</button>
 </form>
+
+

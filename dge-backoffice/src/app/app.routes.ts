@@ -8,15 +8,11 @@ import {LoginComponent} from './login/login.component';
 
 export const routes: Routes = [
 
-    {path:'electeurs', component: ElecteursComponent},
+  {path:'electeurs', component: ElecteursComponent},
   {path:'electeurs/uploadFile', component: UploadFichierComponent},
   {path:'electeurs/probleme', component: ElecteurProblemeComponent},
   {path: 'login',component: LoginComponent},
-
-    { path: '', component: AccueilComponent }
-
-
-
+  { path: '', component: AccueilComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
