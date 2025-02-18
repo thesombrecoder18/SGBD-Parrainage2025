@@ -1,26 +1,20 @@
-<div class="container">
-  <h2>Gestion des Électeurs</h2>
-  <table class="table">
-    <thead>
-    <tr>
-      <th>ID</th>
-      <th>Nom</th>
-      <th>Prénom</th>
-      <th>Numéro de Carte</th>
-      <th>Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let electeur of electeurs">
-      <td>{{ electeur.id }}</td>
-      <td>{{ electeur.nom }}</td>
-      <td>{{ electeur.prenom }}</td>
-      <td>{{ electeur.numCarte }}</td>
-      <td>
-        <button class="btn btn-warning" (click)="modifierElecteur(electeur)">Modifier</button>
-        <button class="btn btn-danger" (click)="supprimerElecteur(electeur.id)">Supprimer</button>
-      </td>
-    </tr>
-    </tbody>
-  </table>
+<h2>Gestion des Électeurs</h2>
+
+<div class="menu-container">
+  <button (click)="naviguer('uploadFile')">
+    <mat-icon>cloud_upload</mat-icon> Importer la liste des électeurs
+  </button>
+  <button (click)="naviguer('probleme')">
+    <mat-icon>error_outline</mat-icon> Électeurs avec des erreurs
+  </button>
+  <button (click)="naviguer('validation')">
+    <mat-icon>check_circle</mat-icon> Validation des corrections
+  </button>
 </div>
+
+<!-- Contenu dynamique -->
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+
