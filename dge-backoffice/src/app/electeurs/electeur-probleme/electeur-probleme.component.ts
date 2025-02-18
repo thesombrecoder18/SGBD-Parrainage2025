@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {ElecteurService} from '../../services/electeur.service';
+import {NgForOf, NgIf} from '@angular/common';
 
 
 @Component({
   selector: 'app-electeur-probleme',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, NgIf, NgForOf],
   templateUrl: './electeur-probleme.component.html',
   styleUrls: ['./electeur-probleme.component.scss']
 })
 export class ElecteurProblemeComponent implements OnInit {
   electeursProblemes: any[] = [];
   electeurEnCours: any | null = null;
-
+  filtreActif: string = 'tous';
   constructor(private electeurService: ElecteurService) {}
 
   ngOnInit() {
@@ -24,27 +25,35 @@ export class ElecteurProblemeComponent implements OnInit {
     ];
   }
 
-  // 🔹 Passer un électeur en mode édition
   modifierElecteur(electeur: any) {
     this.electeurEnCours = { ...electeur };
   }
 
-  // 🔹 Vérifier si l'électeur a corrigé toutes ses erreurs
+
   estCorrectionValide(): boolean {
     if (!this.electeurEnCours) return false;
     return Object.keys(this.electeurEnCours).every(key => this.electeurEnCours[key] !== '');
   }
 
-  // 🔹 Sauvegarder les modifications et supprimer de la liste des erreurs
+
   sauvegarderModifications() {
     if (!this.electeurEnCours || !this.estCorrectionValide()) return;
 
-    // Ajouter l’électeur corrigé au service
+
     this.electeurService.ajouterElecteurCorrige(this.electeurEnCours);
 
-    // Supprimer l'électeur de la liste des erreurs
     this.electeursProblemes = this.electeursProblemes.filter(e => e.id !== this.electeurEnCours?.id);
 
     this.electeurEnCours = null;
   }
+
+
+
+  get electeursFiltres() {
+    if (this.filtreActif === 'tous') return this.electeursProblemes;
+    return this.electeursProblemes.filter(e => e.erreur?.toLowerCase().includes(this.filtreActif));
+  }
+
+
+
 }

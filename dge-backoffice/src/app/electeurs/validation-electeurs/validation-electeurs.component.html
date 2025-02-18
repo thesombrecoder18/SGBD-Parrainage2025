@@ -6,7 +6,9 @@
     <th>ID</th>
     <th>Nom</th>
     <th>Prénom</th>
+    <th>Problème</th>
     <th>CIN / Date de naissance / Num. électeur</th>
+    <th>Statut</th>
   </tr>
   </thead>
   <tbody>
@@ -14,8 +16,12 @@
     <td>{{ electeur.id }}</td>
     <td>{{ electeur.nom }}</td>
     <td>{{ electeur.prenom }}</td>
+    <td>{{ electeur.erreur }}</td>
     <td>
-      {{ electeur.cin || electeur.dateNaissance || electeur.numElecteur }}
+      {{ electeur.cin || electeur.dateNaissance || electeur.numElecteur || 'Non corrigé' }}
+    </td>
+    <td [ngClass]="{'corrige': electeur.statut === 'Corrigé', 'en-attente': electeur.statut === 'En attente'}">
+      {{ electeur.statut }}
     </td>
   </tr>
   </tbody>

@@ -11,8 +11,20 @@ th, td {
 }
 
 th {
+  background-color: #007bff;
+  color: white;
+}
+
+.corrige {
   background-color: #28a745;
   color: white;
+  font-weight: bold;
+}
+
+.en-attente {
+  background-color: #ffc107;
+  color: black;
+  font-weight: bold;
 }
 
 button {

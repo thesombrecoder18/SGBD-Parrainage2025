@@ -1,34 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-
-import {CommonModule} from '@angular/common';
-import {ElecteurService} from '../services/electeur.service';
+import { Component } from '@angular/core';
+import {Router, RouterOutlet} from '@angular/router';
+import {MatIcon} from '@angular/material/icon';
 
 @Component({
   selector: 'app-electeurs',
-  templateUrl: './electeurs.component.html',
   standalone: true,
-  imports:[CommonModule],
-  providers:[ElecteurService],
-  styleUrls: ['./electeurs.component.css']
+  templateUrl: './electeurs.component.html',
+  imports: [
+    RouterOutlet,
+    MatIcon
+  ],
+  styleUrls: ['./electeurs.component.scss']
 })
-export class ElecteursComponent implements OnInit {
+export class ElecteursComponent {
+  constructor(private router: Router) {}
 
-  electeurs: any[] = [];
-
-  constructor(private electeurService: ElecteurService) {}
-
-  ngOnInit(): void {
-    this.electeurs = this.electeurService.getElecteurs();
+  naviguer(route: string) {
+    this.router.navigate([`/electeurs/${route}`]);
   }
-
-  supprimerElecteur(id: number) {
-    this.electeurService.supprimerElecteur(id);
-    this.electeurs = this.electeurService.getElecteurs();
-  }
-  modifierElecteur(electeur: any) {
-    console.log("Modifier électeur :", electeur);
-    //à continuer plus tard
-  }
-
-
 }
