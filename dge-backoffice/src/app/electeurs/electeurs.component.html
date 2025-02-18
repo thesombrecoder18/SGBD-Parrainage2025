@@ -1,20 +1,25 @@
-<h2>Gestion des Électeurs</h2>
-
-<div class="menu-container">
-  <button (click)="naviguer('uploadFile')">
-    <mat-icon>cloud_upload</mat-icon> Importer la liste des électeurs
-  </button>
-  <button (click)="naviguer('probleme')">
-    <mat-icon>error_outline</mat-icon> Électeurs avec des erreurs
-  </button>
-  <button (click)="naviguer('validation')">
-    <mat-icon>check_circle</mat-icon> Validation des corrections
-  </button>
+<div class="dashboard">
+  <div class="sidebar">
+    <h2>Gestion des Électeurs</h2>
+    <ul class="menu-container">
+      <li (click)="naviguer('uploadFile')">
+        <mat-icon>cloud_upload</mat-icon>
+        Importer la liste des électeurs
+      </li>
+      <li (click)="naviguer('probleme')">
+        <mat-icon>error_outline</mat-icon>
+        Électeurs avec des erreurs
+      </li>
+      <li (click)="naviguer('validation')">
+        <mat-icon>check_circle</mat-icon>
+        Validation des corrections
+      </li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="header">
+      <h1>Dashboard</h1>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
-<!-- Contenu dynamique -->
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
-
-
