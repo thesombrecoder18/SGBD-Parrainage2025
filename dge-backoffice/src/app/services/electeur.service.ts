@@ -4,19 +4,28 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ElecteurService {
+  private electeursCorriges: any[] = [];
 
-  private electeurs = [
-    { id: 1, nom: 'Ba', prenom: 'Moussa', numCarte: '123456' },
-    { id: 2, nom: 'Diop', prenom: 'Fatou', numCarte: '654321' }
-  ];
-
-  constructor() { }
-
-  getElecteurs() {
-    return this.electeurs;
+  // Ajouter un électeur corrigé
+  ajouterElecteurCorrige(electeur: any) {
+    this.electeursCorriges.push(electeur);
   }
 
+  // Récupérer tous les électeurs corrigés
+  getElecteursCorriges() {
+    return this.electeursCorriges;
+  }
   supprimerElecteur(id: number) {
-    this.electeurs = this.electeurs.filter(e => e.id !== id);
+    this.electeursCorriges = this.electeursCorriges.filter(e => e.id !== id);
+  }
+
+
+  // Réinitialiser la liste après validation
+  reset() {
+    this.electeursCorriges = [];
+  }
+
+  getElecteurs() {
+    return [];
   }
 }

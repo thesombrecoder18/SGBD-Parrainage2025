@@ -1,6 +1,19 @@
 <h2>Électeurs avec des erreurs</h2>
 
-<table>
+<!-- Filtres -->
+<div class="filters">
+  <label>Filtrer par erreur :</label>
+  <select [(ngModel)]="filtreActif">
+    <option value="tous">Tous</option>
+    <option value="cin">Numéro CIN invalide</option>
+    <option value="dateNaissance">Date de naissance incorrecte</option>
+    <option value="numElecteur">Numéro d’électeur en double</option>
+    <option value="nom">Nom mal écrit</option>
+  </select>
+</div>
+
+<!-- Tableau des électeurs avec erreurs -->
+<table *ngIf="!electeurEnCours">
   <thead>
   <tr>
     <th>ID</th>
@@ -11,16 +24,39 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let electeur of electeursProblemes">
+  <tr *ngFor="let electeur of electeursFiltres">
     <td>{{ electeur.id }}</td>
     <td>{{ electeur.nom }}</td>
     <td>{{ electeur.prenom }}</td>
     <td>{{ electeur.erreur }}</td>
     <td>
-      <button (click)="corrigerErreur(electeur.id)">Corriger</button>
+      <button (click)="modifierElecteur(electeur)">Corriger</button>
     </td>
   </tr>
   </tbody>
 </table>
 
-<p *ngIf="electeursProblemes.length === 0"> Aucun problème détecté !</p>
+<!-- Formulaire de correction -->
+<div *ngIf="electeurEnCours" class="form-container">
+  <h3>Correction des informations</h3>
+
+  <label>Nom:</label>
+  <input [(ngModel)]="electeurEnCours.nom" type="text" />
+
+  <label>Prénom:</label>
+  <input [(ngModel)]="electeurEnCours.prenom" type="text" />
+
+  <label *ngIf="electeurEnCours.cin">Numéro CIN:</label>
+  <input *ngIf="electeurEnCours.cin" [(ngModel)]="electeurEnCours.cin" type="text" />
+
+  <label *ngIf="electeurEnCours.dateNaissance">Date de naissance:</label>
+  <input *ngIf="electeurEnCours.dateNaissance" [(ngModel)]="electeurEnCours.dateNaissance" type="date" />
+
+  <label *ngIf="electeurEnCours.numElecteur">Numéro d'électeur:</label>
+  <input *ngIf="electeurEnCours.numElecteur" [(ngModel)]="electeurEnCours.numElecteur" type="text" />
+
+  <div class="buttons">
+    <button (click)="sauvegarderModifications()" [disabled]="!estCorrectionValide()">Sauvegarder</button>
+    <button class="cancel" (click)="electeurEnCours = null">Annuler</button>
+  </div>
+</div>

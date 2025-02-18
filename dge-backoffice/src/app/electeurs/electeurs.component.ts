@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ElecteurService } from '../services/electeur.service';
+
 import {CommonModule} from '@angular/common';
+import {ElecteurService} from '../services/electeur.service';
 
 @Component({
   selector: 'app-electeurs',
@@ -28,5 +29,6 @@ export class ElecteursComponent implements OnInit {
     console.log("Modifier électeur :", electeur);
     //à continuer plus tard
   }
+
 
 }
