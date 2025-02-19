@@ -1,25 +1,37 @@
-<div class="dashboard">
-  <div class="sidebar">
-    <h2>Gestion des Électeurs</h2>
-    <ul class="menu-container">
-      <li (click)="naviguer('uploadFile')">
-        <mat-icon>cloud_upload</mat-icon>
-        Importer la liste des électeurs
-      </li>
-      <li (click)="naviguer('probleme')">
-        <mat-icon>error_outline</mat-icon>
-        Électeurs avec des erreurs
-      </li>
-      <li (click)="naviguer('validation')">
-        <mat-icon>check_circle</mat-icon>
-        Validation des corrections
-      </li>
-    </ul>
+<h2>Gestion des Électeurs</h2>
+
+<!-- Statistiques -->
+<div class="stats-container">
+  <div class="stat-box">
+    <mat-icon>people</mat-icon>
+    <span>Total Électeurs</span>
+    <strong>{{ totalElecteurs }}</strong>
   </div>
-  <div class="main-content">
-    <div class="header">
-      <h1>Dashboard</h1>
-    </div>
-    <router-outlet></router-outlet>
+  <div class="stat-box error">
+    <mat-icon>error</mat-icon>
+    <span>Électeurs avec erreurs</span>
+    <strong>{{ electeursAvecErreurs }}</strong>
   </div>
+  <div class="stat-box success">
+    <mat-icon>check_circle</mat-icon>
+    <span>Électeurs corrigés</span>
+    <strong>{{ electeursCorriges }}</strong>
+  </div>
+</div>
+
+<!-- Menu de navigation -->
+<div class="menu-container">
+  <button (click)="naviguer('uploadFile')">
+    <mat-icon>cloud_upload</mat-icon> Importer la liste des électeurs
+  </button>
+  <button (click)="naviguer('probleme')">
+    <mat-icon>error_outline</mat-icon> Électeurs avec des erreurs
+  </button>
+  <button (click)="naviguer('validation')">
+    <mat-icon>check_circle</mat-icon> Validation des corrections
+  </button>
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
 </div>
