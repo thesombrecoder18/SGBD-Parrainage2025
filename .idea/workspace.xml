@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7084c183-705c-4dfa-a44e-f4abf544be0d" name="Changes" comment="nice&#10;&#10;Merge branch 'main' of https://github.com/thesombrecoder18/SGBD-Parrainage2025">
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/electeurs_candidats/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ek/electeur2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;thesombrecoder18&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/thesombrecoder18/SGBD-Parrainage2025.git&quot;,
+    &quot;accountId&quot;: &quot;eb1a5028-ec4d-4570-a1d5-a9f0342480ef&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.4.1\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/composer" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/league/config" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/electeurs_candidats/vendor/nunomaduro/termwind" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2t60Ri0noTeG2LFSrTAuauMKaIK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/elizo/Desktop/ProjetSGBD/SGBD-Parrainage2025/electeurs_candidats&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\elizo\\Desktop\\ProjetSGBD\\SGBD-Parrainage2025\\dge-backoffice\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elizo\Desktop\ProjetSGBD\SGBD-Parrainage2025\electeurs_candidats" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/electeurs_candidats/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7084c183-705c-4dfa-a44e-f4abf544be0d" name="Changes" comment="" />
+      <created>1739657212214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739657212214</updated>
+      <workItem from="1739657213863" duration="4651000" />
+      <workItem from="1739706643640" duration="16291000" />
+      <workItem from="1739791364950" duration="5231000" />
+      <workItem from="1739835135960" duration="3129000" />
+      <workItem from="1739904048506" duration="6582000" />
+      <workItem from="1739914422551" duration="2088000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nice&#10;&#10;Merge branch 'main' of https://github.com/thesombrecoder18/SGBD-Parrainage2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="nice&#10;&#10;Merge branch 'main' of https://github.com/thesombrecoder18/SGBD-Parrainage2025" />
+  </component>
+</project>

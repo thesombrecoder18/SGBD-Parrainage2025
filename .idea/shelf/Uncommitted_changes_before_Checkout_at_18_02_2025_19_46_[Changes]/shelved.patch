@@ -1,0 +1,16 @@
+Index: dge-backoffice/src/app/electeurs/electeurs.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><h2>Gestion des Électeurs</h2>\r\n\r\n<div class=\"menu-container\">\r\n  <button (click)=\"naviguer('uploadFile')\">\r\n    <mat-icon>cloud_upload</mat-icon> Importer la liste des électeurs\r\n  </button>\r\n  <button (click)=\"naviguer('probleme')\">\r\n    <mat-icon>error_outline</mat-icon> Électeurs avec des erreurs\r\n  </button>\r\n  <button (click)=\"naviguer('validation')\">\r\n    <mat-icon>check_circle</mat-icon> Validation des corrections\r\n  </button>\r\n</div>\r\n\r\n<!-- Contenu dynamique -->\r\n<div class=\"content\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dge-backoffice/src/app/electeurs/electeurs.component.html b/dge-backoffice/src/app/electeurs/electeurs.component.html
+--- a/dge-backoffice/src/app/electeurs/electeurs.component.html	(revision 3a41898037ff9eeeabd592358400143f27a9f8c7)
++++ b/dge-backoffice/src/app/electeurs/electeurs.component.html	(date 1739907308554)
+@@ -16,3 +16,5 @@
+ <div class="content">
+   <router-outlet></router-outlet>
+ </div>
++
++
