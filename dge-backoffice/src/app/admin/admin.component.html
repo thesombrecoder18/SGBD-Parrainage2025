@@ -49,3 +49,19 @@
       </li>
     </ul>
 </div>
+
+<div class="sponsorship-monitoring">
+    <h2>Suivi des parrainages</h2>
+    <button (click)="monitorSponsorships()">Actualiser</button>
+  
+    <h3>Statistiques</h3>
+    <p>Total des parrainages : {{ sponsorshipStats.total }}</p>
+    <p>Maximum de parrainages : {{ sponsorshipStats.max }}</p>
+  
+    <h3>Détails par candidat</h3>
+    <ul>
+      <li *ngFor="let sponsorship of sponsorships">
+        {{ sponsorship.candidate }} : {{ sponsorship.count }} parrainages
+      </li>
+    </ul>
+</div>

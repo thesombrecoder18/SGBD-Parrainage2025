@@ -106,6 +106,26 @@ export class AdminComponent {
   // Méthode pour suivre les parrainages
   monitorSponsorships() {
     console.log('Suivre les parrainages');
-    // Ajoutez ici la logique pour suivre les parrainages
+    
+
+    export class AdminComponent {
+      sponsorships: any[] = []; // Liste des parrainages
+      sponsorshipStats: any = {}; // Statistiques des parrainages
+    
+      // Simuler le suivi des parrainages
+      monitorSponsorships() {
+        // Exemple de données simulées
+        this.sponsorships = [
+          { candidate: 'Candidat A', count: 150 },
+          { candidate: 'Candidat B', count: 200 },
+        ];
+    
+        // Calculer les statistiques
+        this.sponsorshipStats = {
+          total: this.sponsorships.reduce((sum, s) => sum + s.count, 0),
+          max: Math.max(...this.sponsorships.map(s => s.count)),
+        };
+      }
+    }
   }
 }
