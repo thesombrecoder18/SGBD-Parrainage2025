@@ -76,7 +76,31 @@ export class AdminComponent {
   // Méthode pour afficher les candidats
   viewCandidates() {
     console.log('Voir les candidats');
-    // Ajoutez ici la logique pour afficher les candidats
+    
+
+    export class AdminComponent {
+      candidates: any[] = []; // Liste des candidats
+      newCandidate: any = {}; // Nouveau candidat à ajouter
+      candidateError: string = '';
+    
+      // Ajouter un candidat
+      addCandidate() {
+        if (!this.newCandidate.name || !this.newCandidate.party) {
+          this.candidateError = 'Veuillez remplir tous les champs obligatoires.';
+          return;
+        }
+    
+        // Ajouter le candidat à la liste
+        this.candidates.push({ ...this.newCandidate });
+        this.newCandidate = {}; // Réinitialiser le formulaire
+        this.candidateError = '';
+      }
+    
+      // Supprimer un candidat
+      deleteCandidate(index: number) {
+        this.candidates.splice(index, 1);
+      }
+    }
   }
 
   // Méthode pour suivre les parrainages

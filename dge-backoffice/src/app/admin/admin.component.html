@@ -27,3 +27,25 @@
     <button (click)="importVoters()">Importer</button>
     <p *ngIf="uploadError" class="error">{{ uploadError }}</p>
 </div>
+
+<div class="candidate-management">
+    <h2>Gestion des candidats</h2>
+    <form (ngSubmit)="addCandidate()">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" [(ngModel)]="newCandidate.name" name="name" required>
+  
+      <label for="party">Parti politique :</label>
+      <input type="text" id="party" [(ngModel)]="newCandidate.party" name="party" required>
+  
+      <button type="submit">Ajouter</button>
+    </form>
+    <p *ngIf="candidateError" class="error">{{ candidateError }}</p>
+  
+    <h3>Liste des candidats</h3>
+    <ul>
+      <li *ngFor="let candidate of candidates; let i = index">
+        {{ candidate.name }} ({{ candidate.party }})
+        <button (click)="deleteCandidate(i)">Supprimer</button>
+      </li>
+    </ul>
+</div>
