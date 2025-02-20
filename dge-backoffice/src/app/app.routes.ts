@@ -6,6 +6,7 @@ import {ElecteurProblemeComponent} from './electeurs/electeur-probleme/electeur-
 import {LoginComponent} from './login/login.component';
 import {ValidationElecteursComponent} from './electeurs/validation-electeurs/validation-electeurs.component';
 import {ElecteursComponent} from './electeurs/electeurs.component';
+import {AdminComponent} from './admin/admin.component';
 
 export const routes: Routes = [
 
@@ -14,7 +15,9 @@ export const routes: Routes = [
   {path:'electeurs/probleme', component: ElecteurProblemeComponent},
   { path: 'electeurs/validation', component: ValidationElecteursComponent },
   {path: 'login',component: LoginComponent},
-  { path: '', component: AccueilComponent }
+  { path: '', component: AccueilComponent },
+  {path:'admin',component: AdminComponent},
+  {path:'login',component:LoginComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -13,18 +13,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AccueilComponent } from './accueil/accueil.component';
 import {ElecteursComponent} from './electeurs/electeurs.component';
-import {CommandModule} from '@angular/cli/src/command-builder/command-module';
+
 import {CommonModule} from '@angular/common';
+import {FilterPipe} from './filter.pipe';
 
 @NgModule({
   declarations: [
-<<<<<<< Updated upstream
     AppComponent,
     AccueilComponent,
     ElecteursComponent
-=======
-    
->>>>>>> Stashed changes
+    FilterPipe
   ],
   imports: [
     BrowserModule,

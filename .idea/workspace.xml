@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7084c183-705c-4dfa-a44e-f4abf544be0d" name="Changes" comment="nice&#10;&#10;Merge branch 'main' of https://github.com/thesombrecoder18/SGBD-Parrainage2025">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dge-backoffice/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dge-backoffice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/admin/admin.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/admin/admin.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/admin/admin.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/admin/admin.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/core/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/core/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/core/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/core/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/electeurs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/upload-fichier/upload-fichier.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/upload-fichier/upload-fichier.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/upload-fichier/upload-fichier.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/upload-fichier/upload-fichier.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/upload-fichier/upload-fichier.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/upload-fichier/upload-fichier.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/validation-electeurs/validation-electeurs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/validation-electeurs/validation-electeurs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/validation-electeurs/validation-electeurs.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/validation-electeurs/validation-electeurs.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/validation-electeurs/validation-electeurs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/electeurs/validation-electeurs/validation-electeurs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dge-backoffice/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dge-backoffice/src/app/login/login.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +114,7 @@
       <workItem from="1739904048506" duration="6582000" />
       <workItem from="1739914422551" duration="2088000" />
       <workItem from="1740061248746" duration="1598000" />
-      <workItem from="1740062902851" duration="1328000" />
+      <workItem from="1740062902851" duration="9280000" />
     </task>
     <servers />
   </component>

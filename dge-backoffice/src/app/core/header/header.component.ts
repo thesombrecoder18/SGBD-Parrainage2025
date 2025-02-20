@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router, RouterLink} from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [SharedModule,RouterLink],
+  imports: [SharedModule, RouterLink, NgIf],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

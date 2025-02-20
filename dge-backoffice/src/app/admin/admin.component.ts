@@ -1,56 +1,43 @@
 import { Component } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  imports: [
+    FormsModule,
+    NgIf
+  ],
+  styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent {
-  showElectionPeriodForm = false; // Pour afficher/masquer le formulaire de période de parrainage
-  startDate: string = ''; // Date de début de la période
-  endDate: string = ''; // Date de fin de la période
+  showElectionPeriodForm = false;
+  startDate: string = '';
+  endDate: string = '';
+  electionPeriodError: string = '';
 
-  // Méthode pour ouvrir le formulaire de période de parrainage
+  // Ouvrir le formulaire de période de parrainage
   openElectionPeriodForm() {
     this.showElectionPeriodForm = true;
   }
 
-  // Méthode pour enregistrer la période de parrainage
+  // Enregistrer la période de parrainage
   setElectionPeriod() {
-    console.log('Date de début:', this.startDate);
-    console.log('Date de fin:', this.endDate);
-
-    export class AdminComponent {
-      showElectionPeriodForm = false;
-      startDate: string = '';
-      endDate: string = '';
-      electionPeriodError: string = '';
-    
-      // Ouvrir le formulaire de période de parrainage
-      openElectionPeriodForm() {
-        this.showElectionPeriodForm = true;
-      }
-    
-      // Enregistrer la période de parrainage
-      setElectionPeriod() {
-        if (!this.startDate || !this.endDate) {
-          this.electionPeriodError = 'Veuillez remplir toutes les dates.';
-          return;
-        }
-    
-        if (new Date(this.startDate) >= new Date(this.endDate)) {
-          this.electionPeriodError = 'La date de début doit être avant la date de fin.';
-          return;
-        }
-    
-        // Enregistrer les dates (simulation)
-        console.log('Période de parrainage enregistrée :', this.startDate, 'à', this.endDate);
-        this.showElectionPeriodForm = false;
-        this.electionPeriodError = '';
-      }
+    if (!this.startDate || !this.endDate) {
+      this.electionPeriodError = 'Veuillez remplir toutes les dates.';
+      return;
     }
 
-    this.showElectionPeriodForm = false; // Masquer le formulaire après enregistrement
+    if (new Date(this.startDate) >= new Date(this.endDate)) {
+      this.electionPeriodError = 'La date de début doit être avant la date de fin.';
+      return;
+    }
+
+    // Enregistrer les dates (simulation)
+    console.log('Période de parrainage enregistrée :', this.startDate, 'à', this.endDate);
+    this.showElectionPeriodForm = false;
+    this.electionPeriodError = '';
   }
 
   // Méthode pour importer la liste des électeurs

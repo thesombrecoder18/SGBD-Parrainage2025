@@ -1,30 +1,21 @@
-<h2>Validation des électeurs corrigés</h2>
+<h2>Validation des Électeurs Corrigés</h2>
 
-<table>
-  <thead>
-  <tr>
-    <th>ID</th>
-    <th>Nom</th>
-    <th>Prénom</th>
-    <th>Problème</th>
-    <th>CIN / Date de naissance / Num. électeur</th>
-    <th>Statut</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let electeur of electeursCorriges">
-    <td>{{ electeur.id }}</td>
-    <td>{{ electeur.nom }}</td>
-    <td>{{ electeur.prenom }}</td>
-    <td>{{ electeur.erreur }}</td>
-    <td>
-      {{ electeur.cin || electeur.dateNaissance || electeur.numElecteur || 'Non corrigé' }}
-    </td>
-    <td [ngClass]="{'corrige': electeur.statut === 'Corrigé', 'en-attente': electeur.statut === 'En attente'}">
-      {{ electeur.statut }}
-    </td>
-  </tr>
-  </tbody>
-</table>
+<div class="menu-container">
+  <div class="search-container">
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Recherche..." />
+  </div>
+  <div *ngFor="let electeur of electeursCorriges | filter:searchQuery" class="electeur-item">
+    <div class="electeur-details">
+      <div class="electeur-info">
+        <strong>{{ electeur.nom }} {{ electeur.prenom }}</strong>
+        <p>{{ electeur.erreur }}</p>
+        <p>{{ electeur.cin || electeur.dateNaissance || electeur.numElecteur || 'Non corrigé' }}</p>
+      </div>
+      <div class="electeur-status" [ngClass]="{'corrige': electeur.statut === 'Corrigé', 'en-attente': electeur.statut === 'En attente'}">
+        <span>{{ electeur.statut }}</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-<button (click)="validerCorrections()">Valider les corrections</button>
+<button (click)="validerCorrections()">Valider les Corrections</button>

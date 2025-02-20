@@ -1,10 +1,12 @@
-<app-header/>
+<button>
+<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back"></mat-icon>
+</button>
 
 <h2>Importer la liste des électeurs</h2>
-
+<div>
 <form (submit)="uploadFile()">
   <input type="file" (change)="onFileSelected($event)" accept=".csv" />
   <button type="submit" [disabled]="!file">Uploader</button>
 </form>
 
-
+</div>

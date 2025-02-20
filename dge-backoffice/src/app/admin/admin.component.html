@@ -1,23 +1,22 @@
-<p>admin works!</p>
 <div class="admin-container">
-    <h1>Administration</h1>
-    <div class="admin-actions">
-      <button (click)="openElectionPeriodForm()">Ouvrir la période de parrainage</button>
-      <button (click)="importVoters()">Importer laa liste des électeurs</button>
-      <button (click)="viewCandidates()">Voir candidats</button>
-      <button (click)="monitorSponsorships()">Suivre parrainage</button>
-    </div>
-  
-    <div *ngIf="showElectionPeriodForm" class="election-period-form">
-      <h2>Définir la période de parrainage</h2>
-      <form (ngSubmit)="setElectionPeriod()">
-        <label for="startDate">Date début :</label>
-        <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate" required>
-  
-        <label for="endDate">Date de fin :</label>
-        <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate" required>
-  
-        <button type="submit">Enregistrer</button>
-      </form>
-    </div>
+  <h1>Administration</h1>
+  <div class="admin-actions">
+    <button (click)="openElectionPeriodForm()">Ouvrir la période de parrainage</button>
+    <button (click)="importVoters()">Importer la liste des électeurs</button>
+    <button (click)="viewCandidates()">Voir candidats</button>
+    <button (click)="monitorSponsorships()">Suivre parrainage</button>
   </div>
+
+  <div *ngIf="showElectionPeriodForm" class="election-period-form">
+    <h2>Définir la période de parrainage</h2>
+    <form (ngSubmit)="setElectionPeriod()">
+      <label for="startDate">Date début :</label>
+      <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate" required>
+
+      <label for="endDate">Date de fin :</label>
+      <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate" required>
+
+      <button type="submit">Enregistrer</button>
+    </form>
+  </div>
+</div>

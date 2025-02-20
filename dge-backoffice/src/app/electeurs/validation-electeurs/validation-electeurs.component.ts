@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ElecteurService } from '../../services/electeur.service';
 import { Router } from '@angular/router';
-import {NgClass, NgForOf} from '@angular/common';
+import { NgClass, NgForOf } from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {FilterPipe} from '../../filter.pipe';
 
 @Component({
   selector: 'app-validation-electeurs',
@@ -9,12 +11,15 @@ import {NgClass, NgForOf} from '@angular/common';
   templateUrl: './validation-electeurs.component.html',
   imports: [
     NgClass,
-    NgForOf
+    NgForOf,
+    FormsModule,
+    FilterPipe
   ],
   styleUrls: ['./validation-electeurs.component.scss']
 })
 export class ValidationElecteursComponent implements OnInit {
   electeursCorriges: any[] = [];
+  searchQuery: string = ''; // Pour le filtre
 
   constructor(private electeurService: ElecteurService, private router: Router) {}
 
@@ -27,6 +32,15 @@ export class ValidationElecteursComponent implements OnInit {
       { id: 4, nom: 'Ndoye', prenom: 'Fatou', cin: '654321987', erreur: 'Nom mal écrit', statut: 'Corrigé' },
       { id: 5, nom: 'Fall', prenom: 'Oumar', dateNaissance: '', erreur: 'Date de naissance manquante', statut: 'En attente' }
     ];
+  }
+
+  get filteredElecteurs() {
+    return this.electeursCorriges.filter(electeur => {
+      const search = this.searchQuery.toLowerCase();
+      return electeur.nom.toLowerCase().includes(search) ||
+        electeur.prenom.toLowerCase().includes(search) ||
+        electeur.statut.toLowerCase().includes(search);
+    });
   }
 
   validerCorrections() {

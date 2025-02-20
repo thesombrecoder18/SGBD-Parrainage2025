@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import {HeaderComponent} from '../../core/header/header.component';
+import {MatIcon} from '@angular/material/icon';
+
 
 @Component({
   selector: 'app-upload-fichier',
   standalone: true,
-  imports:[HeaderComponent],
+  imports: [
+    MatIcon
+  ],
   templateUrl: './upload-fichier.component.html',
   styleUrls: ['./upload-fichier.component.scss']
 })

@@ -1,30 +1,94 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+/* Ajout de la mise en forme générale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-th, td {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu-container {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  margin-bottom: 15px;
+}
+
+.search-container input {
   padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
   border: 1px solid #ddd;
-  text-align: left;
+  width: 100%;
+  max-width: 300px;
+  background-color: #f8f9fa;
 }
 
-th {
-  background-color: #007bff;
-  color: white;
+.electeur-item {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.electeur-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.electeur-info {
+  width: 70%;
+}
+
+.electeur-info strong {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.electeur-info p {
+  color: #555;
+}
+
+.electeur-status {
+  text-align: center;
+  width: 20%;
+}
+
+.electeur-status span {
+  font-weight: bold;
+  color: #333;
 }
 
 .corrige {
-  background-color: #28a745;
-  color: white;
-  font-weight: bold;
+  color: #28a745; /* vert pour corrigé */
 }
 
 .en-attente {
-  background-color: #ffc107;
-  color: black;
-  font-weight: bold;
+  color: #ffc107; /* jaune pour en attente */
 }
 
 button {
