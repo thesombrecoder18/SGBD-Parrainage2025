@@ -20,3 +20,10 @@
     </form>
   </div>
 </div>
+
+<div class="import-voters">
+    <h2>Importer la liste des électeurs</h2>
+    <input type="file" (change)="onFileSelected($event)" accept=".csv">
+    <button (click)="importVoters()">Importer</button>
+    <p *ngIf="uploadError" class="error">{{ uploadError }}</p>
+</div>

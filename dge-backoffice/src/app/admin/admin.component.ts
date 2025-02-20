@@ -43,7 +43,34 @@ export class AdminComponent {
   // Méthode pour importer la liste des électeurs
   importVoters() {
     console.log('Importer la liste des électeurs');
-    // Ajoutez ici la logique pour importer les électeurs
+
+    export class AdminComponent {
+      fileToUpload: File | null = null;
+      uploadError: string = '';
+    
+      // Gérer la sélection du fichier
+      onFileSelected(event: any) {
+        const file: File = event.target.files[0];
+        if (file && file.type === 'text/csv') {
+          this.fileToUpload = file;
+          this.uploadError = '';
+        } else {
+          this.uploadError = 'Veuillez sélectionner un fichier CSV valide.';
+        }
+      }
+    
+      // Importer le fichier
+      importVoters() {
+        if (!this.fileToUpload) {
+          this.uploadError = 'Aucun fichier sélectionné.';
+          return;
+        }
+    
+        // Simuler l'importation
+        console.log('Importation du fichier :', this.fileToUpload.name);
+        // Ajouter ici la logique pour envoyer le fichier au serveur
+      }
+    }
   }
 
   // Méthode pour afficher les candidats
