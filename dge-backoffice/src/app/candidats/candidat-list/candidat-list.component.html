@@ -1,107 +1,15 @@
 <app-header></app-header>
 <div class="title">
-  <h2 style="padding: 15px; font-size: 35px;">Postuler à une offre</h2>
+  <h2 style="padding: 15px; font-size: 35px;">Liste des candidats</h2>
 </div>
 
-<div class="search-container-top">
-  <div class="d-flex align-items-center">
-    <div class="dropdown">
-      <button class="btn btn-outline-primary dropdown-toggle" type="button" id="domainDropdown" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Domaines
-        <i class="fas fa-chevron-down"></i>
-      </button>
-      <div class="dropdown-menu" aria-labelledby="domainDropdown">
-        <button class="dropdown-item" *ngFor="let domaine of domains" (click)="onDomainChange(domaine)"> {{
-          domaine }} </button>
-      </div>
-    </div>
-    <div class="search-bar" style="margin-left: 15px; margin-right: 15px">
-      <fa-icon [icon]="faSearch" style="border-right: solid 1px;height: 100%; padding-right: 10px;"></fa-icon>
-      <input type="text" placeholder="Rechercher une offre..." [(ngModel)]="searchTerm"
->
-    </div>
-    <div class="dropdown">
-      <button class="btn btn-outline-primary dropdown-toggle" type="button" id="regionDropdown" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Régions
-        <i class="fas fa-chevron-down"></i>
-      </button>
-      <div class="dropdown-menu" aria-labelledby="regionDropdown">
-        <button class="dropdown-item" *ngFor="let region of regions" (click)="onRegionChange(region)"> {{ region
-          }} </button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <div class="search-container-second">
-  <div style="margin-top: 25px;">
-    <span style="font-weight: bold;">+100 Postes à pourvoir</span>
-  </div>
+  
   <div class="row">
-    <div class="col-md-3 " style="margin-top: 25px;">
-      <div class="d-flex">
-        <button class="btn btn-outline-primary custom-filter-button">
-          <i class="bi bi-filter"></i> Filtrer
-        </button>
-        <div class="dropdown custom-sort-dropdown" style="margin-left: 15px;">
-          <button class="btn sort-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <div class="sort-content">
-              <strong>Trier par</strong>
-              <span class="sort-option">{{selectedSort}}</span>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <button class="dropdown-item" (click)="onSort('Les plus proches')">Les plus proches</button>
-            <button class="dropdown-item" (click)="onSort('Les mieux notés')">Les mieux notés</button>
-            <button class="dropdown-item" (click)="onSort('Les plus populaires')">Les plus populaires</button>
-          </div>
-        </div>
-      </div>
-      <div class="filter-section">
-        <!-- Type Contrat -->
-        <div class="filter-category" style="border-top: 1px solid #e0e0e0;">
-          <div class="filter-header" (click)="toggleSection('typeContrat')">
-            <span>Type Contrat</span>
-            <i [ngClass]="{'fas fa-chevron-down': !isTypeContratOpen, 'fas fa-chevron-up': isTypeContratOpen}"></i>
-          </div>
-          <div class="filter-options" *ngIf="isTypeContratOpen">
-            <label >
-              <input type="checkbox"  />
-test            </label>
-          </div>
-        </div>
 
-        <!-- Statut -->
-        <div class="filter-category">
-          <div class="filter-header" (click)="toggleSection('statut')">
-            <span>Statut</span>
-            <i [ngClass]="{'fas fa-chevron-down': !isStatutOpen, 'fas fa-chevron-up': isStatutOpen}"></i>
-          </div>
-          <div class="filter-options" *ngIf="isStatutOpen">
-            <label >
-              <input type="checkbox" />
-              test
-            </label>
-          </div>
-        </div>
-
-      </div>
-    </div>
     <div class="col-md-9" style="margin-top: 25px;">
-      <div class="filter-tags-container">
-        <div class="filter-tags">
-          <span class="tag" >
-            # <button class="remove-tag" >×</button>
-          </span>
-        </div>
-        <div class="results-count">
-          {{ totalResults }} Résultats
-        </div>
-      </div>
       <hr>
 
       <div class="card-container">

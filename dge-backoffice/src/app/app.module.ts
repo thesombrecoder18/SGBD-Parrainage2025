@@ -17,7 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {CommonModule} from '@angular/common';
 import {FilterPipe} from './filter.pipe';
 import { CandidatListComponent } from './candidats/candidat-list/candidat-list.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +35,7 @@ import { CandidatListComponent } from './candidats/candidat-list/candidat-list.c
     MatButtonModule,
     MatCardModule,
     CommonModule,
+    FormsModule,
     FontAwesomeModule
   ],
   providers: [],
