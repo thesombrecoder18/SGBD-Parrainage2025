@@ -1,19 +1,16 @@
 <app-header></app-header>
 <div class="title">
-  <h2 style="padding: 15px; font-size: 35px;">Liste des candidats</h2>
+  <h2 style="padding: 15px; font-size: 35px; justify-content: center;">Liste des candidats</h2>
 </div>
 
 
 
 <div class="search-container-second">
-  
   <div class="row">
-
     <div class="col-md-9" style="margin-top: 25px;">
       <hr>
-
-      <div class="card-container">
-       <div class="card" *ngFor="let emploi of paginatedEmplois" style="width: 250px; ">
+      <div class="card-container" style="display: flex; flex-direction: row;">
+       <div class="card" *ngFor="let emploi of paginatedEmplois" style="width: 250px; margin-right: 5px;">
           <img [src]="emploi.image" class="card-img-top" alt=" Iformation">
           <div class="card-body">
             <div class="card-logo">

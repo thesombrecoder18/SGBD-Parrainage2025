@@ -61,7 +61,7 @@ export class CandidatListComponent {
     this.paginatedEmplois = [
       {
         id: 1,
-        emploi: 'Développeur Frontend Angular',
+        emploi: 'Bassirou Diomaye Faye',
         image: 'assets/images/dev-angular.jpg',
         logo: 'assets/images/company-logo1.png',
         actif: true,
@@ -71,7 +71,7 @@ export class CandidatListComponent {
       },
       {
         id: 2,
-        emploi: 'Data Scientist',
+        emploi: 'Idrissa Seck',
         image: 'assets/images/data-science.jpg',
         logo: 'assets/images/company-logo2.png',
         actif: true,
@@ -81,7 +81,7 @@ export class CandidatListComponent {
       },
       {
         id: 3,
-        emploi: 'DevOps Engineer',
+        emploi: 'Macky Sall',
         image: 'assets/images/devops.jpg',
         logo: 'assets/images/company-logo3.png',
         actif: false,
