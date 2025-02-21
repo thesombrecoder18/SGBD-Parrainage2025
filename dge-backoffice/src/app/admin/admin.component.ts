@@ -128,4 +128,56 @@ export class AdminComponent {
       }
     }
   }
+
+  // Méthode pour gerer les users
+  adduser() {
+    console.log('Gerer les utilisateurs');
+
+    export class AdminComponent {
+      // Liste des utilisateurs (agents DGE)
+      users: any[] = [
+        { id: 1, name: 'Agent 1', email: 'agent1@dge.sn', role: 'admin' },
+        { id: 2, name: 'Agent 2', email: 'agent2@dge.sn', role: 'editor' },
+      ];
+    
+      // Nouvel utilisateur à ajouter
+      newUser: any = {
+        name: '',
+        email: '',
+        role: 'editor', // Par défaut, un nouvel utilisateur est un éditeur
+      };
+    
+      // Message d'erreur
+      userError: string = '';
+    
+      // Ajouter un nouvel utilisateur
+      addUser() {
+        if (!this.newUser.name || !this.newUser.email) {
+          this.userError = 'Veuillez remplir tous les champs obligatoires.';
+          return;
+        }
+    
+        // Vérifier si l'email est déjà utilisé
+        if (this.users.some(user => user.email === this.newUser.email)) {
+          this.userError = 'Cet email est déjà utilisé.';
+          return;
+        }
+    
+        // Ajouter le nouvel utilisateur à la liste
+        this.users.push({
+          id: this.users.length + 1, // Générer un ID unique 
+          ...this.newUser,
+        });
+    
+        // Réinitialiser le formulaire
+        this.newUser = { name: '', email: '', role: 'editor' };
+        this.userError = '';
+      }
+    
+      // Supprimer un utilisateur
+      deleteUser(userId: number) {
+        this.users = this.users.filter(user => user.id !== userId);
+      }
+    }
+  }
 }
