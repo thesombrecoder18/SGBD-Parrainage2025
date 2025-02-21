@@ -1,0 +1,150 @@
+.title{
+    margin-top:5%;
+    background-color: #3C5980;
+    color: white;
+  }
+  .search-container-top {
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 1%;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+  }
+  
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .company-logo {
+    width: 90px;
+    height: auto;
+  }
+  
+  .job-status {
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .job-status i {
+    font-size: 10px;
+    color: #000;
+    margin-right: 5px;
+  }
+  
+  
+  .job-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  
+  
+  
+  .job-location,
+  .job-date {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .job-location i,
+  .job-date i {
+    margin-right: 5px;
+    color: #666;
+  }
+  
+  
+  .job-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    margin-top: 30px;
+    color: #333;
+    margin-left: 5px;
+    text-align: left;
+    line-height: 1.8;
+  }
+  
+  
+  .job-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .job-location {
+    font-size: 14px;
+    color: #000;
+    font-family: 'Georgia', serif;
+    display: flex;
+    align-items: center;
+  }
+  
+  .job-location i {
+    margin-right: 5px;
+    color: #004080;
+  }
+  
+  
+  .job-date {
+    font-size: 14px;
+    color: #000;
+    font-family: 'Georgia', serif;
+    display: flex;
+    align-items: center;
+  }
+  
+  .job-date i {
+    margin-right: 5px;
+    color: #004080;
+  }
+  
+  
+  .view-more-btn {
+    padding: 6px 18px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    align-self: flex-end;
+  }
+  
+  .view-more-btn:hover {
+    background-color: #003366;
+  }
+  
+  .status-icon {
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg); 
+    margin-right: 5px;
+  }

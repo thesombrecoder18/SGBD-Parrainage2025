@@ -39,11 +39,17 @@ export class AccueilComponent implements OnInit{
   }
   
 
-  initImgUrls() : void{
+  /*initImgUrls() : void{
     this.imageUrl = [
       {title: "Atelier de conception moteur electrique", id:0, url: "assets/f1.png", value: "accessible" },
       {title: "Atelier de conception moteur electrique", id:1, url: "assets/f2.jpg", value: "rapide" },
       {title: "Atelier de conception moteur electrique", id:2, url: "assets/f3.jpg", value: "facile" }
+    ];
+  }*/
+ initImgUrls() : void{
+    this.imageUrl = [
+    
+      {title: "Atelier de conception moteur electrique", id:0, url: "assets/f3.jpg", value: "facile" }
     ];
   }
 

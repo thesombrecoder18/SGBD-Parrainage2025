@@ -7,6 +7,7 @@ import {LoginComponent} from './login/login.component';
 import {ValidationElecteursComponent} from './electeurs/validation-electeurs/validation-electeurs.component';
 import {ElecteursComponent} from './electeurs/electeurs.component';
 import {AdminComponent} from './admin/admin.component';
+import { CandidatListComponent } from './candidats/candidat-list/candidat-list.component';
 
 export const routes: Routes = [
 
@@ -17,7 +18,10 @@ export const routes: Routes = [
   {path: 'login',component: LoginComponent},
   { path: '', component: AccueilComponent },
   {path:'admin',component: AdminComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'listeCandidats', component: CandidatListComponent}
+
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

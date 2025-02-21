@@ -13,16 +13,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AccueilComponent } from './accueil/accueil.component';
 import {ElecteursComponent} from './electeurs/electeurs.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {CommonModule} from '@angular/common';
 import {FilterPipe} from './filter.pipe';
+import { CandidatListComponent } from './candidats/candidat-list/candidat-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
+    CandidatListComponent,
     ElecteursComponent
-    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import {FilterPipe} from './filter.pipe';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: []
