@@ -12,8 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tentatives_upload', function (Blueprint $table) {
-            $table->id();
+            $table->id('num_tentative');
+            $table->binary('data');
+            $table->string('adresse_ip');
+            $table->string('checksum');
+            $table->date('date_upload');
+            $table->string('encodage');
             $table->timestamps();
+    
         });
     }
 

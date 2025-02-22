@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('electeurs_problemes', function (Blueprint $table) {
             $table->id();
+            $table->string('numero_carte_electeur')->unique();
+            $table->string('numero_carte_identite')->unique();
+            $table->string('nature');
             $table->timestamps();
+
         });
     }
 

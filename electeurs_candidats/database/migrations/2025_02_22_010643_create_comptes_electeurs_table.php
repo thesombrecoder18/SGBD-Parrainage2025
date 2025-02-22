@@ -12,8 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('comptes_electeurs', function (Blueprint $table) {
-            $table->id();
+            $table->string('adresse_email')->unique();
+            $table->string('numero_telephone')->unique();
+            $table->string('code_authentification');
+            $table->string('code_validation');
+            $table->date('date_parrainage');
+            $table->boolean('status')->default(false);
             $table->timestamps();
+
         });
     }
 

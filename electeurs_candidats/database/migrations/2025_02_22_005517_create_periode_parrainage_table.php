@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('periode_parrainage', function (Blueprint $table) {
             $table->uuid('id')->primary();
-        $table->date('date_debut');
-        $table->date('date_fin');
-        $table->timestamps();
+            $table->date('date_debut');
+            $table->date('date_fin');
+            $table->timestamps();
 
         });
     }
