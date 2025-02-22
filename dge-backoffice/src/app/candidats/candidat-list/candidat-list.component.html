@@ -1,45 +1,31 @@
 <app-header></app-header>
 <div class="title">
-  <h2 style="padding: 15px; font-size: 35px; justify-content: center;">Liste des candidats</h2>
+    <h2 style="padding: 15px; font-size: 35px;">Liste des candidats</h2>
 </div>
-
-
-
 <div class="search-container-second">
   <div class="row">
-    <div class="col-md-9" style="margin-top: 25px;">
+    <div style=" margin-left: -40px !important;">
+
       <hr>
-      <div class="card-container" style="display: flex; flex-direction: row;">
-       <div class="card" *ngFor="let emploi of paginatedEmplois" style="width: 250px; margin-right: 5px;">
-          <img [src]="emploi.image" class="card-img-top" alt=" Iformation">
+
+      <div class="card-container">
+        <div class="card" *ngFor="let formation of formationsData" style="width: 250px; ">
+          <img [src]="formation.imageUrl" class="card-img-top" alt=" Iformation">
           <div class="card-body">
             <div class="card-logo">
-              <img [src]="emploi.logo" alt="Logo">
+              <img [src]="formation.logoUrl" alt="Logo" (click)="gotoSchoolPage()" style="cursor: pointer;">
             </div>
-            <div class="job-status" >
-              <span class="status-icon" [ngStyle]="{'background-color': emploi.actif ? '#26CC25' : 'red'}"></span>
-              {{ emploi.actif ? "actif": "clôturé" }}
+            <div class="card-rating">
+              <i class="fas fa-star"></i>{{ formation.rating }}
             </div>
-            
-            <h4 class="job-title">{{emploi.emploi}}</h4>
-              <div class="job-info">
-                <div>
-                <div class="job-location">
-                  <i class="fas fa-map-marker-alt"></i> {{emploi.location}}
-                </div>
-                <div class="job-date">
-                  <i class="fas fa-calendar-alt"></i>{{ emploi.datePoste| date:'dd MMMM yyyy' }}
-                </div>
-              </div>
-              <button class="view-more-btn" (click)="openDialog()">voir plus</button>
-              </div>
-              
-            
-        
+            <h5 class="card-title">{{ formation.title }}</h5>
+            <div class="card-details">
+              <span class="card-duration">{{ formation.niveau }}</span>
+              <span class="card-location">{{ formation.location }}</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-      
 
       <div class="pagination-container">
         <button class="btn" [disabled]="currentPage === 1" (click)="setPage(currentPage - 1)">
@@ -61,9 +47,11 @@
           &#x276F;
         </button>
       </div>
-      <hr style="margin-top: 40px;">
-   
+      <hr style="margin-top: 54px;">
+    </div>
   </div>
 </div>
-</div>
-<app-footer></app-footer>
+  <div>
+
+  </div>
+  <app-footer></app-footer>
