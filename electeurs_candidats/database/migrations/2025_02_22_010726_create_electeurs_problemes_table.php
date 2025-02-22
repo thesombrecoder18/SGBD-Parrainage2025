@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('agents_dge', function (Blueprint $table) {
+        Schema::create('electeurs_problemes', function (Blueprint $table) {
             $table->id();
-            $table->string('adresse_email')->unique();
-            $table->string('mot_de_passe');
             $table->timestamps();
-    
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('agents_dge');
+        Schema::dropIfExists('electeurs_problemes');
     }
 };

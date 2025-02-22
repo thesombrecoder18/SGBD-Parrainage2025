@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('historique_uploads', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->string('utilisateur_upload');
+            $table->date('date_upload');
+            $table->string('adresse_ip');
+            $table->foreignId('agent_dge_id')->constrained('agents_dge')->onDelete('cascade');
             $table->timestamps();
+    
         });
     }
 

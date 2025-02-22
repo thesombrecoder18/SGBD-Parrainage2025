@@ -12,7 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('electeurs', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('numero_telephone')->unique();
+            $table->date('date_naissance');
+            $table->enum('sexe', ['Masculin', 'Féminin']);
+            $table->string('numero_carte_electeur')->unique();
+            $table->string('numero_carte_identite')->unique();
+            $table->integer('numero_bureau_vote');
             $table->timestamps();
         });
     }

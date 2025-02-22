@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('candidats', function (Blueprint $table) {
             $table->id();
+            $table->string('nom_parti_politique');
+            $table->string('slogan');
+            $table->string('code_securite')->unique();
+            $table->string('photo');
+            $table->string('trois_couleurs_parti');
+            $table->string('url_page_infos');
             $table->timestamps();
+    
         });
     }
 
