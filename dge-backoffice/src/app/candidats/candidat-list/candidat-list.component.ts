@@ -174,7 +174,7 @@ export class CandidatListComponent {
       niveau: "Bac+3",
       location: "Thiès",
       rating: 4.4,
-      imageUrl: "https://example.com/images/ecommerce.jpg",
+      imageUrl: "assets/img_diomaye.png",
       logoUrl: "https://example.com/logos/esmt.png",
       description: "Formation sur la création et gestion de boutiques en ligne, marketing digital et logistique",
       duration: "3 ans",
