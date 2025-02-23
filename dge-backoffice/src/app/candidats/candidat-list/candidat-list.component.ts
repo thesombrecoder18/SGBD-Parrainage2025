@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { get } from 'http';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
@@ -27,7 +27,7 @@ interface Emploi {
 @Component({
   selector: 'app-candidat-list',
   standalone: true,
-  imports: [CoreModule, SharedModule, CommonModule, FormsModule, FontAwesomeModule],
+  imports: [CoreModule, SharedModule, CommonModule, FormsModule, FontAwesomeModule, ReactiveFormsModule],
   templateUrl: './candidat-list.component.html',
   styleUrls: ['./candidat-list.component.scss']
 })
