@@ -18,13 +18,15 @@ import {CommonModule} from '@angular/common';
 import {FilterPipe} from './filter.pipe';
 import { CandidatListComponent } from './candidats/candidat-list/candidat-list.component';
 import { FormsModule } from '@angular/forms';
+import { CandidatFormComponent } from './candidats/candidat-form/candidat-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     CandidatListComponent,
-    ElecteursComponent
+    ElecteursComponent,
+    CandidatFormComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     CommonModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: []

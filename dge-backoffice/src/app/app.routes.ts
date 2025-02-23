@@ -8,6 +8,7 @@ import {ValidationElecteursComponent} from './electeurs/validation-electeurs/val
 import {ElecteursComponent} from './electeurs/electeurs.component';
 import {AdminComponent} from './admin/admin.component';
 import { CandidatListComponent } from './candidats/candidat-list/candidat-list.component';
+import { CandidatFormComponent } from './candidats/candidat-form/candidat-form.component';
 
 export const routes: Routes = [
 
@@ -19,7 +20,8 @@ export const routes: Routes = [
   { path: '', component: AccueilComponent },
   {path:'admin',component: AdminComponent},
   {path:'login',component:LoginComponent},
-  {path:'listeCandidats', component: CandidatListComponent}
+  {path:'listeCandidats', component: CandidatListComponent},
+  {path:'ajoutCandidat', component: CandidatFormComponent},
 
 
 ];
