@@ -1,6 +1,11 @@
 <app-header></app-header>
-<div class="title">
+<div class="title" style="display: flex; justify-content: space-between;">
     <h2 style="padding: 15px; font-size: 35px;">Liste des candidats</h2>
+    <button class="btn-add-candidate" [routerLink]="['/ajoutCandidat']">
+        <i class="fas fa-plus-circle me-2"></i>
+        Ajouter un candidat
+      </button>
+
 </div>
 <div class="search-container-second">
   <div class="row">

@@ -46,16 +46,12 @@ export class CandidatFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // Vérification de la carte d'électeur
   verifyVoterCard(): void {
     if (this.voterCardForm.valid) {
-      // Simulation d'une vérification avec le backend
       setTimeout(() => {
-        // Simule une réponse positive
         this.step = 2;
         this.error = '';
         
-        // Remplir les données du candidat (simulation)
         this.candidateForm.patchValue({
           firstName: 'Amadou',
           lastName: 'Diallo',
@@ -67,7 +63,6 @@ export class CandidatFormComponent implements OnInit {
     }
   }
 
-  // Gestion du téléchargement de la photo
   onPhotoSelected(event: any): void {
     const file = event.target.files[0];
     if (file) {
@@ -75,7 +70,6 @@ export class CandidatFormComponent implements OnInit {
         photo: file
       });
 
-      // Création d'une prévisualisation
       const reader = new FileReader();
       reader.onload = () => {
         this.photoPreview = reader.result as string;
@@ -84,13 +78,10 @@ export class CandidatFormComponent implements OnInit {
     }
   }
 
-  // Soumission du formulaire final
   onSubmit(): void {
     if (this.candidateForm.valid) {
-      // Simulation d'envoi au backend
       setTimeout(() => {
         this.success = 'Candidature enregistrée avec succès! Un code de sécurité a été envoyé à votre email et téléphone.';
-        // Réinitialisation après 5 secondes
         setTimeout(() => {
           this.resetForm();
         }, 5000);
@@ -100,7 +91,6 @@ export class CandidatFormComponent implements OnInit {
     }
   }
 
-  // Réinitialisation du formulaire
   resetForm(): void {
     this.step = 1;
     this.voterCardForm.reset();
@@ -110,7 +100,6 @@ export class CandidatFormComponent implements OnInit {
     this.photoPreview = null;
   }
 
-  // Vérification des erreurs de formulaire
   getErrorMessage(controlName: string): string {
     const control = this.candidateForm.get(controlName);
     if (control?.hasError('required')) {
